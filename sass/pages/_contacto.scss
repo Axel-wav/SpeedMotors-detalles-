@@ -1,0 +1,75 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.contact-page {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+        color: $text-muted;
+    }
+
+    // Estilos del Formulario
+    .form {
+        background-color: $bg-card;
+        padding: 2.5rem;
+        border-radius: $radius-md;
+        border: 1px solid $border-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include mobile {
+            padding: 1.5rem;
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        &__label {
+            color: $text-light;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        &__input,
+        &__select,
+        &__textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background-color: lighten($bg-dark, 3%);
+            border: 1px solid $border-color;
+            border-radius: $radius-sm;
+            color: $text-light;
+            font-family: $font-main;
+            font-size: 0.95rem;
+            transition: $transition-base;
+
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+                box-shadow: 0 0 0 3px rgba($primary-color, 0.2);
+            }
+        }
+
+        &__textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+    }
+}

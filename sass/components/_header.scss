@@ -1,0 +1,79 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.header {
+    background-color: rgba($bg-dark, 0.95);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid $border-color;
+    padding: 1rem 2rem;
+
+    @include flex-center(row, space-between, center);
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    // Logo estilizado
+    &__logo-link {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        transition: $transition-base;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &__logo-text {
+        color: $text-light;
+    }
+
+    &__logo-accent {
+        color: $primary-color;
+    }
+
+    // Navegación
+    .nav {
+        &__list {
+            display: flex;
+            gap: 1.5rem;
+
+            @include mobile {
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__link {
+            color: $text-muted;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: $radius-sm;
+            transition: $transition-base;
+
+            &:hover {
+                color: $text-light;
+                background-color: rgba($primary-color, 0.15);
+            }
+
+            // Clase para el enlace activo
+            &--active {
+                color: $text-light;
+                background-color: $primary-color;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: $primary-hover;
+                }
+            }
+        }
+    }
+}

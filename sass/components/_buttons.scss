@@ -1,0 +1,38 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: $radius-sm;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: $transition-base;
+    text-align: center;
+    text-decoration: none;
+
+    // Botón Principal (Naranja / Color primario)
+    &--primary {
+        background-color: $primary-color;
+        color: $text-light;
+
+        &:hover {
+            background-color: $primary-hover;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($primary-color, 0.4);
+        }
+    }
+
+    // Botón Secundario (Transparente con borde)
+    &--secondary {
+        background-color: transparent;
+        color: $text-light;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            transform: translateY(-2px);
+        }
+    }
+}

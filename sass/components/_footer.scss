@@ -1,0 +1,27 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.footer {
+    background-color: darken($bg-dark, 3%);
+    border-top: 1px solid $border-color;
+    padding: 2rem 1rem;
+    margin-top: auto;
+    text-align: center;
+
+    &__content {
+        @include flex-center(column, center, center);
+        gap: 0.5rem;
+    }
+
+    &__text {
+        color: $text-light;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+
+    &__subtext {
+        color: $text-muted;
+        font-size: 0.85rem;
+        font-style: italic;
+    }
+}
