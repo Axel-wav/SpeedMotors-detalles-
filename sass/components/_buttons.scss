@@ -1,7 +1,8 @@
 @import '../utilities/variables';
 @import '../utilities/mixins';
 
-.btn {
+// Plantilla (placeholder)
+%btn-base {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     border-radius: $radius-sm;
@@ -11,6 +12,10 @@
     transition: $transition-base;
     text-align: center;
     text-decoration: none;
+}
+
+.btn {
+    @extend %btn-base;
 
     // Botón Principal (Naranja / Color primario)
     &--primary {
