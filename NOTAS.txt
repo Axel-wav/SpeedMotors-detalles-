@@ -18,5 +18,5 @@ El sitio está dividido en 5 partes:
 5. contacto.html (Formulario para consultas)
 
 # Enlaces del proyecto:
-- Página funcionando (Netlify):** [Pega aquí tu link de Netlify]
-- Código en GitHub: [Pega aquí el link de tu repositorio]
+- Página funcionando (Netlify): []
+- Código en GitHub: [https://axel-wav.github.io/SpeedMotors-detalles-/]
