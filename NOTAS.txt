@@ -1,0 +1,22 @@
+# Speed Motors (Proyecto)
+
+Este es mi proyecto final para el curso, es una página web estática para un taller de motos llamado "Speed Motors". Aquí apliqué todo lo que fui aprendiendo sobre maquetación y estilos a lo largo de las clases :p
+
+# Herramientas que utilicé:
+- HTML: Para hacer la estructura de las 5 páginas del sitio.
+- SASS: Para darle estilo a todo. Lo dividí en varias carpetas (partials) y usé variables y nesting para tener el código más ordenado.
+- Bootstrap y Animate.css: Para algunos detalles extra y animaciones de la página.
+- SEO básico: Le agregué etiquetas como descripciones, el favicon y Open Graph para que se vea bien si compartes el link por WhatsApp.
+- Responsive: La página se adapta para que se pueda ver bien tanto en la compu como en el celular.
+
+# Páginas del proyecto:
+El sitio está dividido en 5 partes:
+1. index.html (Página principal)
+2. nosotros.html (Sobre el taller)
+3. servicios.html (Los trabajos que hacemos, como calibración de balancines)
+4. galeria.html (Fotos del taller)
+5. contacto.html (Formulario para consultas)
+
+# Enlaces del proyecto:
+- Página funcionando (Netlify):** [Pega aquí tu link de Netlify]
+- Código en GitHub: [Pega aquí el link de tu repositorio]
