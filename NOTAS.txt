@@ -19,4 +19,4 @@ El sitio está dividido en 5 partes:
 
 # Enlaces del proyecto:
 - Página funcionando (Netlify): [https://speedmotors.netlify.app/]
-- Código en GitHub: [https://axel-wav.github.io/SpeedMotors-detalles-/]
+- Código en GitHub: [https://axel-wav.github.io/SpeedMotors-detalles-/] 
